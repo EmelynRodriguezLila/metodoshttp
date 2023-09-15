@@ -4,23 +4,23 @@ const app = express()
 
 
 app.get('/', (req, res) => {
-    res.send('Hola Get')
+    res.json({msg: 'Hello GET'})
 }) 
 
 app.post('/', (req, res) => {
-    res.send('Hola Post')
+    res.json({msg: 'Hello POST'})
 })
 
 app.put('/', (req, res) => {
-    res.send('Hola Put')
+    res.json({msg: 'Hello PUT'})
 }) 
 
 app.patch('/', (req, res) => {
-    res.send('Hola Patch')
+    res.json({msg: 'Hello PATCH'})
 }) 
 
 app.delete('/', (req, res) => {
-    res.send('Hola Delete')
+    res.json({msg: 'Hello DELETE'})
 }) 
 
 /**
